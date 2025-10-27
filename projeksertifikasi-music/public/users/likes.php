@@ -71,7 +71,7 @@ include __DIR__ . '/_header_users.php';
 
               <!-- Tombol Unlike -->
               <div class="mt-5 md:mt-0 md:ml-6 flex-shrink-0">
-                <form method="post" action="../process_like.php">
+                <form method="post" action="../../app/process_like.php">
                   <input type="hidden" name="_csrf_token" value="<?= e(csrf_token()) ?>">
                   <input type="hidden" name="article_id" value="<?= e($a['id']) ?>">
                   <button type="submit"

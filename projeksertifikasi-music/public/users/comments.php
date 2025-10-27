@@ -56,7 +56,7 @@ include __DIR__ . '/_header_users.php';
                 </div>
 
                 <!-- Tombol Hapus -->
-                <form method="post" action="../process_comment.php" class="mt-3 md:mt-0">
+                <form method="post" action="../../app/process_comment.php" class="mt-3 md:mt-0">
                   <input type="hidden" name="_csrf_token" value="<?= e(csrf_token()) ?>">
                   <input type="hidden" name="delete_id" value="<?= e($c['id']) ?>">
                   <button type="submit" name="action" value="delete"
