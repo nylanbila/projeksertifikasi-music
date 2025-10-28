@@ -43,7 +43,7 @@ mysqli_stmt_store_result($stmt);
 //email yang diinput harus unik atau baru
 if (mysqli_stmt_num_rows($stmt) > 0) {
   mysqli_stmt_close($stmt);
-  header('Location: ../public/register.php?error=' . urlencode('Email sudah terdaftar'));
+  header('Location: ../public/register.php?success=2');
   exit;
 }
 mysqli_stmt_close($stmt);
